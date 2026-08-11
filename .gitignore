@@ -1,0 +1,33 @@
+# Model weights
+*.bin
+*.pth
+*.pt
+*.onnx
+*.safetensors
+
+# Downloaded model directories (weights are too large for git)
+/models/CNN_mnist/
+/models/ViT_mnist_2x2/
+/models/ViT_mnist_4x4/
+/models/ViT_mnist_7x7/
+/models/ViT_mnist_14x14/
+
+# Build artifacts
+/build/
+/bin/
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Python
+.venv/
+__pycache__/
+
+# ViT training script (not needed for inference)
+/src/tools/ViT_model.py
+
+# Raw MNIST data (auto-downloaded by torchvision, not needed)
+/data/
+/MNIST/
